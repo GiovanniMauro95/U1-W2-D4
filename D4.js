@@ -30,7 +30,7 @@ console.log(crazySum(9, 5))
 */
 
 const crazyDiff = function (num3) {
-  const difference = Math.abs(num3 - 19)
+  const difference = Math.abs(num3) - 19
   if (difference > 19) {
     return difference * 3
   } else {
@@ -91,7 +91,13 @@ console.log(check3and7(16))
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-//
+const reverseString = function (str2) {
+  const arrayString = str2.split("")
+  arrayString.reverse()
+  const stringReverse = arrayString.join("")
+  return stringReverse
+}
+console.log(reverseString("GIOVANNI"))
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
