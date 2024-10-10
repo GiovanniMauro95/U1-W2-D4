@@ -2,7 +2,11 @@
  Scrivi una funzione di nome "area", che riceve due parametri (l1, l2) e calcola l'area del rettangolo associato.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const area = function (l1, l2) {
+  const areaRettangolo = l1 * l2
+  console.log(areaRettangolo)
+}
+area(3, 6)
 
 /* ESERCIZIO 2
  Scrivi una funzione di nome "crazySum", che riceve due numeri interi come parametri.
