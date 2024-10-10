@@ -91,14 +91,14 @@ console.log(check3and7(16))
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+//
 
 /* ESERCIZIO 8
  Scrivi una funzione di nome "upperFirst", che riceve come parametro una stringa formata da diverse parole.
  La funzione deve rendere maiuscola la prima lettera di ogni parola contenuta nella stringa.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+//
 
 /* ESERCIZIO 9
  Scrivi una funzione di nome "cutString", che riceve come parametro una stringa. La funzione deve creare una nuova stringa senza il primo e l'ultimo carattere
@@ -111,4 +111,12 @@ console.log(check3and7(16))
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const giveMeRandom = function (num5) {
+  const randomNum = []
+  for (i = 0; i < num5; i++) {
+    const number = Math.floor(Math.random() * 11)
+    randomNum.push(number)
+  }
+  return randomNum
+}
+console.log(giveMeRandom(4))
