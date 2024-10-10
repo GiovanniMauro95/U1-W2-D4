@@ -105,7 +105,15 @@ console.log(check3and7(16))
  della stringa originale.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const cutString = function (string) {
+  if (string.lenght <= 2) {
+    return " "
+  } else {
+    return string.slice(1, -1)
+  }
+}
+console.log(cutString("Benvenuto"))
+console.log(cutString("Si"))
 
 /* ESERCIZIO 10
  Scrivi una funzione di nome "giveMeRandom", che accetta come parametro un numero n e ritorna un'array contenente n numeri casuali inclusi tra 0 e 10.
