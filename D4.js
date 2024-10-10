@@ -14,14 +14,27 @@ area(3, 6)
  la loro somma moltiplicata per tre.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazySum = function (num1, num2) {
+  if (num1 !== num2) {
+    return num1 + num2
+  } else return (num1 + num2) * 3
+}
+console.log(crazySum(6, 6))
+console.log(crazySum(9, 5))
 
 /* ESERCIZIO 3
  Scrivi una funzione di nome "crazyDiff" che calcola la differenza assoluta tra un numero fornito come parametro e 19.
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const crazyDiff = function (num3) {
+  const difference = Math.abs(num3 - 19)
+  if (difference > 19) {
+    return difference * 3
+  } else return difference
+}
+console.log(crazyDiff(100))
+console.log(crazyDiff(30))
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
