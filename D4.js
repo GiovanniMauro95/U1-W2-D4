@@ -17,7 +17,9 @@ area(3, 6)
 const crazySum = function (num1, num2) {
   if (num1 !== num2) {
     return num1 + num2
-  } else return (num1 + num2) * 3
+  } else {
+    return (num1 + num2) * 3
+  }
 }
 console.log(crazySum(6, 6))
 console.log(crazySum(9, 5))
@@ -31,7 +33,9 @@ const crazyDiff = function (num3) {
   const difference = Math.abs(num3 - 19)
   if (difference > 19) {
     return difference * 3
-  } else return difference
+  } else {
+    return difference
+  }
 }
 console.log(crazyDiff(100))
 console.log(crazyDiff(30))
@@ -44,7 +48,9 @@ console.log(crazyDiff(30))
 const boundary = function (n) {
   if ((n > 20 && n <= 100) || n === 400) {
     return (n = true)
-  } else return (n = false)
+  } else {
+    return (n = false)
+  }
 }
 console.log(boundary(130))
 console.log(boundary(400))
@@ -55,14 +61,31 @@ console.log(boundary(400))
  ritornare la stringa originale senza alterarla.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const epify = function (str) {
+  if (str.startsWith("EPICODE")) {
+    return str
+  } else {
+    return "EPICODE" + str
+  }
+}
+console.log(epify("EPICODE" + ", benvenuto"))
+console.log(epify(", registrati!"))
 
 /* ESERCIZIO 6
  Scrivi una funzione di nome "check3and7" che accetta un numero positivo come parametro. La funzione deve controllare che il parametro sia un multiplo
  di 3 o di 7. (Suggerimento: usa l'operatore modulo)
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const check3and7 = function (num4) {
+  if (num4 % 3 === 0 || num4 % 7 === 0) {
+    return true
+  } else {
+    return false
+  }
+}
+console.log(check3and7(15))
+console.log(check3and7(70))
+console.log(check3and7(16))
 
 /* ESERCIZIO 7
  Scrivi una funzione di nome "reverseString", il cui scopo è invertire una stringa fornita come parametro (es. "EPICODE" --> "EDOCIPE")
