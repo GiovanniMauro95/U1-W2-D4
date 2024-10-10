@@ -41,7 +41,13 @@ console.log(crazyDiff(30))
  se n è uguale a 400.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+const boundary = function (n) {
+  if ((n > 20 && n <= 100) || n === 400) {
+    return (n = true)
+  } else return (n = false)
+}
+console.log(boundary(130))
+console.log(boundary(400))
 
 /* ESERCIZIO 5
  Scrivi una funzione di nome "epify" che accetta una stringa come parametro.
